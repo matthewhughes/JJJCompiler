@@ -1,1 +1,7 @@
-This file was created by IntelliJ IDEA 12.0.4 for binding GitHub repository
+This is a toy compiler for a toy VM I'm working on as part of my assessment for the SPS module at Liverpool Hope University.
+The idea behind it is that it reads from an assembly language that's structured in a JSON document. From there, it's compiled
+into a binary format and fed into a VM I'll eventually write.
+
+Yes, it's a horrendous idea. No, there's absolutely no utility. I'm just doing it for the lolz.
+
+Any questions? Email me at me at matthewhughes dot co dot uk
