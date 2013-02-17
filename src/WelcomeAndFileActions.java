@@ -14,6 +14,8 @@ public class WelcomeAndFileActions {
             System.out.println("Correct usage is JJJCompiler <code.json>");
             System.out.println("Leaving Now. Bye!");
             System.exit(1);
+        } else {
+            System.out.println("Opening JSON Code");
         }
     }
     static String GetPath(String Filename){
@@ -23,13 +25,14 @@ public class WelcomeAndFileActions {
         // Yes, I'll fix it later.
 
         String FileAndPath = "/home/matthew/IdeaProjects/JJJCompiler/src/" + Filename;
-        return Filename;
+        return FileAndPath;
     }
     static String OpenFileAndConvert(String FileAndPath) {
         String ContentsOfFile = null;
         try {
             // Full disclosure. This one-liner was borrowed from Stack Overflow.
             // http://stackoverflow.com/questions/326390/how-to-create-a-java-string-from-the-contents-of-a-file
+            // It's not plagiarism if I fess up to it, right?
             ContentsOfFile = new Scanner(new File(FileAndPath), "UTF-8").useDelimiter("\\A").next();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

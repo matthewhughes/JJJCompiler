@@ -1,6 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	WelcomeAndFileActions WAFA = new WelcomeAndFileActions();
+    WAFA.Welcome();
+    WAFA.CheckArgs(args);
+    String FilePath = WAFA.GetPath(args[0]);
+    String FileContents = WAFA.OpenFileAndConvert(FilePath);
     }
 }
