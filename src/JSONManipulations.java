@@ -22,6 +22,9 @@ public class JSONManipulations {
         }
 
     }
+    void IterateThroughJSON(String JSONInput){
+
+    }
 
     String ConvertIntoJSON(String Content){
         Object obj=JSONValue.parse(Content);
