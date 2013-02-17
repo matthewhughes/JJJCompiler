@@ -6,5 +6,6 @@ public class Main {
     WAFA.CheckArgs(args);
     String FilePath = WAFA.GetPath(args[0]);
     String FileContents = WAFA.OpenFileAndConvert(FilePath);
+    WAFA.PrintContentsOfFile(FileContents);
     }
 }

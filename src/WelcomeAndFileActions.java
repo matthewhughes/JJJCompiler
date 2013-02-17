@@ -43,5 +43,8 @@ public class WelcomeAndFileActions {
         }
         return ContentsOfFile;
     }
+    static void PrintContentsOfFile(String FileContents){
+        System.out.println(FileContents);
+    }
 
 }
