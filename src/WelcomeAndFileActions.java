@@ -2,13 +2,13 @@ import java.io.*;
 import java.util.Scanner;
 
 public class WelcomeAndFileActions {
-    static void Welcome(){
+    void Welcome(){
     System.out.println("Welcome to the Java!Java!JSON compiler");
     System.out.println("By Matthew Hughes");
     System.out.println("http://matthewhughes.co.uk");
     System.out.println("me@matthewhughes.co.uk");
     }
-    static void CheckArgs(String[] args) {
+    void CheckArgs(String[] args) {
         if(args.length < 1){
             System.out.println("Not enough arguments");
             System.out.println("Correct usage is JJJCompiler <code.json>");
@@ -18,16 +18,15 @@ public class WelcomeAndFileActions {
             System.out.println("Opening JSON Code");
         }
     }
-    static String GetPath(String Filename){
+    String GetPath(String Filename){
         // Yes, this is a horrible, horrible hack.
         // Yes, this basically means that this code won't really work on anyone else's computer.
         // Yes, I'm a fuckwit.
         // Yes, I'll fix it later.
 
-        String FileAndPath = "/home/matthew/IdeaProjects/JJJCompiler/src/" + Filename;
-        return FileAndPath;
+        return "/home/matthew/IdeaProjects/JJJCompiler/src/" + Filename;
     }
-    static String OpenFileAndConvert(String FileAndPath) {
+    String OpenFileAndConvert(String FileAndPath) {
         String ContentsOfFile = null;
         try {
             // Full disclosure. This one-liner was borrowed from Stack Overflow.
@@ -43,7 +42,7 @@ public class WelcomeAndFileActions {
         }
         return ContentsOfFile;
     }
-    static void PrintContentsOfFile(String FileContents){
+    void PrintContentsOfFile(String FileContents){
         System.out.println(FileContents);
     }
 
