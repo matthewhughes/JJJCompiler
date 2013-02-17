@@ -10,9 +10,9 @@ public class WelcomeAndFileActions {
     System.out.println("me@matthewhughes.co.uk");
     }
     void CheckArgs(String[] args) {
-        if(args.length < 1){
+        if(args.length < 2){
             System.out.println("Not enough arguments");
-            System.out.println("Correct usage is JJJCompiler <code.json>");
+            System.out.println("Correct usage is JJJCompiler <code.json> <outputname>");
             System.out.println("Leaving Now. Bye!");
             System.exit(1);
         } else {
@@ -45,6 +45,10 @@ public class WelcomeAndFileActions {
     }
     void PrintContentsOfFile(String FileContents){
         System.out.println(FileContents);
+    }
+    String GetCurrentDirectory() {
+        String Directory = System.getProperty("user.dir");
+        return Directory;
     }
 
 }
