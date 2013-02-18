@@ -1,9 +1,19 @@
 import org.json.simple.*;
+
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class JSONManipulations {
 
+    void CheckFileExists(String Directory, String OutputName){
+        File f = new File(Directory + "/" + OutputName +".JJJ");
+        if(f.exists()){
+            System.out.println("File already exists.");
+            System.out.println("Either move existing file or use a different name for your output.");
+            System.exit(1);
+        }
+    }
     void CreateOutputFile(String Directory, String OutputName){
         try {
             PrintWriter CompiledCode = new PrintWriter(OutputName + ".JJJ");
