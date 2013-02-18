@@ -19,5 +19,14 @@ public class ASMFunctions {
     String StoreImmediate(String Value){
         return "004" + Value;
     }
+    String JumpTo(String Value){
+        return "005" + Value;
+    }
+    String JumpIfEqualTo(String Value){
+        return "006" + Value;
+    }
+    String JumpIfZero(String Value){
+        return "007" + Value;
+    }
 
 }
