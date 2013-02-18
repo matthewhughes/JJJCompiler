@@ -1,5 +1,4 @@
 import org.json.simple.*;
-
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
@@ -23,12 +22,7 @@ public class JSONManipulations {
 
     }
     void IterateThroughJSON(String JSONInput){
-       // Iterate through the JSON and convert the structured assembly to bytecode
-        // Again, slightly borrowed from Stack Overflow.
-        // Don't blame me for JSON Simple's shit documentation.
-        // Code snaffed from http://stackoverflow.com/questions/6697147/json-iterate-through-jsonarray
-
-        JSONObject ConvertObject = new JSONObject(JSONInput);
+        // Nixed the last bit. It didn't work.
 
     }
 
